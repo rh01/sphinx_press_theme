@@ -25,6 +25,8 @@ jobs:
         branch: master
   - stage: deploy
     script: pip install -e .
+    before_script:
+    - make ui
     python: 3.6
     deploy:
       provider: pypi
