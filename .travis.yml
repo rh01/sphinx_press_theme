@@ -13,7 +13,7 @@ script: tox
 jobs:
   include:
     - stage: deploy
-      script: make docs
+      script: make docs && touch docs/build/html/.nojekyll
       before_script:
         - pipenv install --dev --skip-lock
         - make install
