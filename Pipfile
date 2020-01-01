@@ -6,6 +6,7 @@ verify_ssl = true
 [dev-packages]
 sphinx = ">=2.0.0"
 sphinxemoji = "*"
+bump2version = "*"
 
 [packages]
 
