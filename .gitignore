@@ -3,3 +3,5 @@ __pycache__
 *.egg-info
 docs/build
 demo/_build
+.DS_Store
+.idea/

@@ -7,13 +7,10 @@ $anchorHeight = ($navbarHeight + 0.5rem)
   margin-top -($anchorHeight)
   padding-top $anchorHeight
   margin-bottom 0
-  &:hover
-    .headerlink
-        opacity: 1
 
 .content
-   // FIXME: sphinx should provide a citation-reference?
-  .footnote-reference, .label, dt, p
+   // FIXME: sphinx should provide a citation-reference? for dt and p??
+  .footnote-reference, .label
     margin-top -($navbarHeight)
     padding-top $navbarHeight
   & a:focus
@@ -29,10 +26,8 @@ h1, h2, h3, h4, h5, h6
       content "#"
 
 a.headerlink
-  font-size 0.85em
   visibility hidden
-  &:hover
-    text-decoration none
+  font-size 0.85em
 
 ul.page-nav
   list-style none
@@ -86,7 +81,7 @@ ul.breadcrumbs
 
 // force background color from pygments
 .content .highlight pre
-  background-color inherit
+  background-color #191919
 
 .content .highlighted
   background-color #fbe54e

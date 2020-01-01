@@ -1,4 +1,9 @@
 <template>
+  <!--
+  DO NOT MODIFY
+  THIS FILE IS KEPT ONLY FOR REFERENCE
+  ONLY THE STYLING AND SCRIPT IS USED
+  -->
   <form
     id="search-form"
     class="algolia-search-wrapper search-box"

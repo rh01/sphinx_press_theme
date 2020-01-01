@@ -145,6 +145,13 @@ export default {
   .nav-links a
     &:hover, &.router-link-active
       color $textColor
+  .nav-item
+    .icon.outbound
+      vertical-align middle
+      opacity 0
+    &:hover
+      .icon.outbound
+        opacity 1
   .nav-item > a:not(.external)
     &:hover, &.router-link-active
       margin-bottom -2px

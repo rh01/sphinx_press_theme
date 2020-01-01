@@ -9,38 +9,34 @@ import Sidebar from './Sidebar.vue'
 import Page from './Page.vue'
 
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
-Vue.component('outboundlink', OutboundLink)
-Vue.component('navbar', Navbar)
-Vue.component('navlinks', NavLinks)
-Vue.component('sidebar', Sidebar)
-Vue.component('page', Page)
+Vue.component('outboundlink', OutboundLink);
+Vue.component('navbar', Navbar);
+Vue.component('navlinks', NavLinks);
+Vue.component('sidebar', Sidebar);
+Vue.component('page', Page);
 
 
 // fake router element
 Vue.component('router-link', {
   props: ['to'],
   template: '<a :href="to"><slot></slot></a>',
-})
+});
 
 new Vue({
   el: '#app',
-  // taken from Layout.vue
   data: {
     isSidebarOpen: false,
     swUpdateEvent: null
   },
   computed: {
     pageClasses () {
-      //const userPageClass = this.$page.frontmatter.pageClass
       return [
-        {
-         // 'no-navbar': !this.shouldShowNavbar,
-          'sidebar-open': this.isSidebarOpen,
-         // 'no-sidebar': !this.shouldShowSidebar
-        },
-       // userPageClass
+          {
+            'sidebar-open': this.isSidebarOpen
+          },
+          // Add more user page classes
       ]
     }
   },
@@ -49,6 +45,6 @@ new Vue({
       this.isSidebarOpen = typeof to === 'boolean' ? to : !this.isSidebarOpen
     },
   },
-})
+});
 
 

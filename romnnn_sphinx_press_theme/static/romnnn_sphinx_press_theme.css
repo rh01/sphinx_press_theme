@@ -7,8 +7,7 @@
 
  /* FONTS FOR THE CODE - will fall back to monospace if unavailable */
 
-@import url('https://fontlibrary.org/face/roboto-mono');
-@import url('https://fontlibrary.org/face/inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto&display=swap');
 
 /* MAKES MAIN TEXT SECTION LARGER */
 .content:not(.custom) {
@@ -17,14 +16,12 @@
 
 /* THE SECTION BELOW DEFINES THE APPEARANCE OF AUTODOC-GENERATED DOCS */
 
-.sig-name.descname {
-    font-size: 1.2em;
+.sig-name, .sig-prename {
     font-weight: bold;
-    padding: 0 0 3px; /* creates a perfect grey rectangle*/
+    font-size: 1.2em;
 }
 
 .sig-param {
-    font-family: 'RobotoMonoRegular', 'Roboto Mono', 'Inconsolata', monospace;
     margin-left: 0.3em;
 }
 
@@ -33,6 +30,7 @@
 }
 
 dt {
+    font-family: 'Roboto', 'Inconsolata', monospace;
     line-height: 1.5em;
     margin-bottom: 1em;
 }
@@ -57,8 +55,22 @@ dl.method, dl.function {
 }
 
 .viewcode-link {
-    margin-left: 1em;
-    color: #9ad8bc;
+    visibility: hidden;
+    float: right;
+}
+
+.viewcode-link:hover {
+    text-decoration: underline;
+}
+
+.viewcode-back {
+    position: absolute;
+    left: 0;
+}
+
+.highlight>pre>div.viewcode-block {
+    position: relative;
+    padding-left: 50px;
 }
 
 /* THE SECTION BELOW DEFINES THE APPEARANCE OF TABLE-OF-CONTENTS */

@@ -4,17 +4,17 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="sphinx_press_theme",
+    name="romnnn_sphinx_press_theme",
     version="0.5.1",
-    url="https://schettino72.github.io/sphinx_press_site/",
+    url="https://github.com/romnnn/sphinx_press_theme",
     license="MIT",
-    author="Eduardo Naufel Schettino <schetino72>",
+    author="romnnn",
     description="A Sphinx-doc theme based on Vuepress",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    packages=["sphinx_press_theme"],
+    packages=["romnnn_sphinx_press_theme"],
     package_data={
-        "sphinx_press_theme": [
+        "romnnn_sphinx_press_theme": [
             "theme.conf",
             "*.html",
             "util/*.html",
@@ -22,7 +22,7 @@ setup(
             "static/*.js",
         ]
     },
-    entry_points={"sphinx.html_themes": ["press = sphinx_press_theme"]},
+    entry_points={"sphinx.html_themes": ["press = romnnn_sphinx_press_theme"]},
     install_requires=["sphinx>=2.0.0"],
     classifiers=[
         "Framework :: Sphinx",
@@ -40,10 +40,5 @@ setup(
         "Topic :: Documentation",
         "Topic :: Software Development :: Documentation",
     ],
-    keywords="sphinx doc theme vue.js",
-    project_urls={
-        "Documentation": "https://schettino72.github.io/sphinx_press_site/",
-        "Source": "https://github.com/schettino72/sphinx_press_theme",
-        "Tracker": "https://schettino72.github.io/sphinx_press_site/issues",
-    },
+    keywords=["sphinx", "doc", "theme", "vue.js"]
 )

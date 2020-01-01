@@ -104,10 +104,16 @@ function resolveOpenGroupIndex (route, items) {
     font-weight 600
     font-size 1.1em
     line-height 1.5rem
-    padding 1rem 0 1.5rem 1.5rem
+    padding 1.5rem
     border-bottom 1px solid $borderColor
+    form
+      display flex
+      flex-flow row wrap
+      align-items center
+      input[type=text]
+        flex-grow 1
   .sidebar-links
-    padding 1.5rem 0
+    padding 0 0 1.5rem 0
 
 @media (max-width: $MQMobile)
   .sidebar

@@ -1,59 +1,45 @@
-# sphinx_press_theme
+# romnnn_sphinx_press_theme
 
-A modern responsive theme for python's [Sphinx](http://www.sphinx-doc.org) documentation generator.
+This is a fork of the original [sphinx_press_theme](https://schettino72.github.io/sphinx_press_site/) by [schettino72](),
+which is a modern and responsive theme for python's [Sphinx](http://www.sphinx-doc.org) documentation generator.
 
-See it in action on Press Theme own [website](https://schettino72.github.io/sphinx_press_site/)
-
-
-This theme is based on [VuePress](https://vuepress.vuejs.org/).
-It uses [Vue.js](https://vuejs.org/) & [Stylus](http://stylus-lang.com/) managed by
-[webpack](https://webpack.js.org/) (through [vue-cli](https://cli.vuejs.org/)).
-
-
-**Press** theme is still in **BETA**.
-Contributions are welcome.
+The theme is based on [VuePress](https://vuepress.vuejs.org/) and uses 
+[Vue.js](https://vuejs.org/)+ 
+[Stylus](http://stylus-lang.com/) with
+[webpack](https://webpack.js.org/).
 
 ## Usage
 
 First install the theme:
-
-```
+```bash
 $ pip install sphinx_press_theme
 ```
 
-On Sphinx project's ``conf.py``: set the theme name to ``press``.
-
+To use the theme, set the theme name to ``press`` in your sphinx project's ``conf.py``:
 ```
 html_theme = "press"
 ```
 
-See details on [Sphinx theming docs](http://www.sphinx-doc.org/en/master/theming.html#using-a-theme).
-
+For more information, see the [Sphinx theming docs](http://www.sphinx-doc.org/en/master/theming.html#using-a-theme).
 
 ## Development
+1. Build the web assets:
+    ```bash
+    cd ui
+    npm run build
+    ```
 
-First build web assets:
+    The generated `theme.css`, `theme.js` and `theme-vendors.js` 
+    will be linked into the theme under `romnnn_sphinx_press_theme/static`.
 
-```
-cd ui
-npm run build
-```
+2. Install theme locally:
+    ```bash
+    pip install -e .
+   ```
 
-Sphinx theme has a soft link to built assets...
-Install theme locally with `pip install -e .`.
+3. Review the theme by building the theme's documentation under `docs/`:
+    ```bash
+    make docs
+    ```
 
-`docs` folder contains theme's own documentantion.
-
-```
-cd docs
-make clean; make html
-```
-
-
-## Website
-
-To update website:
-
-cd ../press_site
-rsync -rvi ../sphinx_vuepress_theme/docs/build/html/ .
-git add --all
+    Generated html will be in `docs/build/html`.

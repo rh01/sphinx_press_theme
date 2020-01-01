@@ -18,7 +18,7 @@ List
 Bullet lists:
 ```````````````
 
-- This is a bullet list.
+- This is a bullet list. |:heart_eyes:| |:snake:|
 
 - Bullets can be "*", "+", or "-".
 
@@ -68,7 +68,9 @@ Option lists, for listing command-line options:
 
 
 Literal blocks:
--------------------
+---------------
+
+::
 
     if literal_block:
         text = 'is left as-is'
@@ -77,15 +79,18 @@ Literal blocks:
 
 
 Block quotes:
-----------------
+--------------
 
-    This theory, that is mine, is mine.
+	This theory, that is mine, is mine.
 
-    -- Anne Elk (Miss)
+	-- Anne Elk (Miss)
+
+	You can nest
+		And nest more
 
 
 Simple Table
------------------
+------------
 
 ====================  ==========  ==========
 Header row, column 1  Header 2    Header 3

@@ -1,23 +1,30 @@
 <template>
+  <!--
+  DO NOT MODIFY
+  THIS FILE IS KEPT ONLY FOR REFERENCE
+  ONLY THE STYLING AND SCRIPT IS USED
+  -->
   <header class="navbar">
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
 
-    <router-link
-      :to="$localePath"
-      class="home-link"
-    >
-      <img
-        class="logo"
-        v-if="$site.themeConfig.logo"
-        :src="$withBase($site.themeConfig.logo)"
-        :alt="$siteTitle"
+    <div class="home-link-container">
+      <router-link
+        :to="$localePath"
+        class="home-link"
       >
-      <span
-        class="site-name"
-        v-if="$siteTitle"
-        :class="{ 'can-hide': $site.themeConfig.logo }"
-      >{{ $siteTitle }}</span>
-    </router-link>
+        <img
+          class="logo"
+          v-if="$site.themeConfig.logo"
+          :src="$withBase($site.themeConfig.logo)"
+          :alt="$siteTitle"
+        >
+        <span
+          class="site-name"
+          v-if="$siteTitle"
+          :class="{ 'can-hide': $site.themeConfig.logo }"
+        >{{ $siteTitle }}</span>
+      </router-link>
+    </div>
 
     <div class="links">
       <AlgoliaSearchBox
@@ -55,6 +62,7 @@ export default {
 @import './styles/config.styl'
 
 .navbar
+  background-color green
   padding 0.7rem 1.5rem
   line-height $navbarHeight - 1.4rem
   position relative

@@ -1,0 +1,17 @@
+<navbar @toggle-sidebar="toggleSidebar">
+  <div class="home-link-container">
+      <router-link to="{{pathto(master_doc)}}" class="home-link">
+      {% if logo %}
+        <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="doit logo"/>
+      {% endif %}
+        <span class="site-name">{{ project|e }}</span>
+    </router-link>
+  </div>
+
+  <div class="links">
+    <navlinks class="can-hide">
+      {%- include "util/navlinks.html" %}
+      {%- include "util/extlinks.html" %}
+    </navlinks>
+  </div>
+</navbar>

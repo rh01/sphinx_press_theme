@@ -1,4 +1,9 @@
 <template>
+  <!--
+  DO NOT MODIFY
+  THIS FILE IS KEPT ONLY FOR REFERENCE
+  ONLY THE STYLING AND SCRIPT IS USED
+  -->
   <transition name="sw-update-popup">
     <div
       v-if="enabled"

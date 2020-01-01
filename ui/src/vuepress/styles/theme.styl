@@ -11,11 +11,40 @@ html, body
   margin 0
 
 body
-  font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+  font-family -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", sans-serif
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   font-size 16px
   color $textColor
+
+hr
+  margin 0
+
+input
+  padding 4px
+  margin 3px 6px 3px 0
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus
+  outline none
+
+input[type=text]
+  border-width 2px
+
+input[type=submit]
+  background-color $accentColor
+  padding 6px 10px
+  border none
+  color white
+  text-align center
+  text-decoration none
+  display inline-block
+  border-radius 2px
+  cursor pointer
+  &:hover
+    background-color lighten($accentColor, 8%)
 
 .page
   padding-left $sidebarWidth
@@ -30,6 +59,13 @@ body
   background-color #fff
   box-sizing border-box
   border-bottom 1px solid $borderColor
+
+.home-link-container
+  display inline-block
+  border-radius 4px
+  padding 0 5px
+  &:hover
+    background-color $inlineCodeBgColor
 
 .sidebar-mask
   position fixed
@@ -56,9 +92,7 @@ body
 
 .content:not(.custom)
   @extend $wrapper
-  # > *:first-child
-  #  margin-top $navbarHeight
-  a:hover
+  a:not(.toc-backref):hover
     text-decoration underline
   p.demo
     padding 1rem 1.5rem
@@ -66,6 +100,9 @@ body
     border-radius 4px
   img
     max-width 100%
+
+.sig-name.descname
+  color $accentColor
 
 .content.custom
   padding 0
@@ -83,11 +120,10 @@ p a code
   color $accentColor
 
 kbd
-  background #eee
-  border solid 0.15rem #ddd
-  border-bottom solid 0.25rem #ddd
-  border-radius 0.15rem
-  padding 0 0.15em
+  background #efefef
+  padding 0.2em
+  color black
+  border-radius 5px
 
 blockquote
   font-size 1.2rem
@@ -106,8 +142,7 @@ h1, h2, h3, h4, h5, h6
   font-weight 600
   line-height 1.25
   .content:not(.custom) > &
-    margin-top (0.5rem - $navbarHeight)
-    padding-top ($navbarHeight + 1rem)
+    padding-top 2rem
     margin-bottom 0
     &:first-child
       margin-top -1.5rem
@@ -138,9 +173,6 @@ a.header-anchor
   &:hover
     text-decoration none
 
-code, kbd, .line-number
-  font-family source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
-
 p, ul, ol
   line-height 1.7
 
@@ -153,6 +185,11 @@ table
   margin 1rem 0
   display: block
   overflow-x: auto
+
+table, blockquote
+  p
+    padding 0
+    margin 0
 
 tr
   border-top 1px solid #dfe2e5

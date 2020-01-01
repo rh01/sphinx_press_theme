@@ -2,7 +2,6 @@
 <header class="navbar">
   <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
   <slot></slot>
-
     <!--   <img -->
     <!--     class="logo" -->
     <!--     v-if="$site.themeConfig.logo" -->
