@@ -2,7 +2,7 @@
   <div class="home-link-container">
       <router-link to="{{pathto(master_doc)}}" class="home-link">
       {% if logo %}
-        <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="doit logo"/>
+        <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="logo"/>
       {% endif %}
         <span class="site-name">{{ project|e }}</span>
     </router-link>
