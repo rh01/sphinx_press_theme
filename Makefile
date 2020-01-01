@@ -1,5 +1,5 @@
 install:
-	cd ui && npm install
+	cd ui && npm install --no-package-lock
 
 docs:
 	cd ui && npm run build

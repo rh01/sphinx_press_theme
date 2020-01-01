@@ -16,7 +16,7 @@ jobs:
       script: make docs
       before_script:
         - pipenv install --dev
-        - make install --no-package-lock
+        - make install
       python: 3.6
       deploy:
         provider: pages
