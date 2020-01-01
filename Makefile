@@ -14,7 +14,7 @@ demo:
 	pip3 install -e .
 	cd demo && make clean; make html
 
-.PHONY: docs demo Makefile
+.PHONY: docs demo ui install Makefile
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
