@@ -1,0 +1,26 @@
+language: python
+python:
+  - 3.8
+  - 3.7
+  - 3.6
+  - 3.5
+
+install: pip install -U tox-travis
+
+script: tox
+
+jobs:
+  include:
+    - stage: deploy
+      script: make docs
+      before_script:
+        - pipenv install --dev
+      python: 3.6
+      deploy:
+        provider: pages
+        local-dir: docs/build
+        skip-cleanup: true
+        github-token: $GH_TOKEN
+        keep-history: true
+        on:
+           branch: master

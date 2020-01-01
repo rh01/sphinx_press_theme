@@ -5,3 +5,4 @@ docs/build
 demo/_build
 .DS_Store
 .idea/
+.tox/
