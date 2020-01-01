@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="romnnn_sphinx_press_theme",
-    version="0.5.3",
+    version="0.5.4",
     url="https://github.com/romnnn/sphinx_press_theme",
     license="MIT",
     author="romnn",
