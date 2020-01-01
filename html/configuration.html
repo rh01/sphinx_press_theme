@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Configuration</title>
+    
+      <link rel="stylesheet" href="_static/pygments.css">
+      <link rel="stylesheet" href="_static/theme.css">
+      <link rel="stylesheet" href="_static/romnnn_sphinx_press_theme.css">
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+      
+      <script src="_static/theme-vendors.js"></script>
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="author" title="About these documents" href="about.html" />
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="Who is using Press Theme" href="who.html" />
+  <link rel="prev" title="About" href="about.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <div class="home-link-container">
+      <router-link to="index.html" class="home-link">
+      
+        <img class="logo" src="_static/logo.png" alt="doit logo"/>
+      
+        <span class="site-name">Sphinx Press Theme</span>
+    </router-link>
+  </div>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="index.html#sphinx-press-theme"
+         class="nav-link  router-link-active">
+         Docs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="theme-demo/index.html#demo"
+         class="nav-link ">
+         demo
+      </a>
+    </div>
+  
+
+<div class="nav-item">
+  <a href="https://github.com/romnnn/sphinx_press_theme"
+     class="nav-link external">
+       Github <outboundlink/>
+  </a>
+</div>
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="index.html#sphinx-press-theme"
+         class="nav-link  router-link-active">
+         Docs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="theme-demo/index.html#demo"
+         class="nav-link ">
+         demo
+      </a>
+    </div>
+  
+
+<div class="nav-item">
+  <a href="https://github.com/romnnn/sphinx_press_theme"
+     class="nav-link external">
+       Github <outboundlink/>
+  </a>
+</div>
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Search</span>
+    <div class="searchformwrapper">
+      <form autocomplete="off" class="search" action="search.html" method="get">
+        <input type="text" name="q" autocomplete="off" />
+        <input type="submit" value="Go" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#sphinx-press-theme">Docs</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 "><a href="about.html" class="reference internal ">About</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Configuration</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#config-values" class="reference internal">Config values</a></li>
+                
+                  <li class="toctree-l2"><a href="#templates" class="reference internal">Templates</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="who.html" class="reference internal ">Who is using Press Theme</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="changes.html" class="reference internal ">Changes</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="theme-demo/index.html#demo">demo</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="theme-demo/basic.html" class="reference internal ">Basic Specification</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="theme-demo/admonition.html" class="reference internal ">Admonitions</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="theme-demo/domain.html" class="reference internal ">Domain</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="theme-demo/extensions.html" class="reference internal ">Extensions</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li>Configuration</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="about.html"
+       title="previous chapter">← About</a>
+  </li>
+  <li class="next">
+    <a href="who.html"
+       title="next chapter">Who is using <strong>Press</strong> Theme →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="configuration">
+<h1>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h1>
+<p>The Press theme webpage is composed of a fixed header, a sidebar and main content area.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">util</span></code> folder contains Jinja2 snippets to be <em>included</em>,
+from main templates. Those can be easily replaced by theme users.</p>
+<p>To change site/page structure you should <em>extend</em> pages and give new implementations for Jinja2 <strong>blocks</strong>.</p>
+<p>Jinja2 templates and blocks are organized as follow:</p>
+<div class="section" id="config-values">
+<h2>Config values<a class="headerlink" href="#config-values" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="html-logo">
+<h3><code class="docutils literal notranslate"><span class="pre">html_logo</span></code><a class="headerlink" href="#html-logo" title="Permalink to this headline">¶</a></h3>
+<p>If defined shows an image instead of project name on page top-left (link to index page).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_logo</span> <span class="o">=</span> <span class="s1">&#39;_static/myproject-logo.png&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="html-sidebars">
+<h3><code class="docutils literal notranslate"><span class="pre">html_sidebars</span></code><a class="headerlink" href="#html-sidebars" title="Permalink to this headline">¶</a></h3>
+<p>By default the <em>sidebars</em> include only: searchbox and a global TOC tree.
+See docs on <a class="reference external" href="http://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_sidebars">html_sidebars</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_sidebars</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;**&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;util/searchbox.html&#39;</span><span class="p">,</span> <span class="s1">&#39;util/sidetoc.html&#39;</span><span class="p">]}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="html-css-files">
+<h3><code class="docutils literal notranslate"><span class="pre">html_css_files</span></code><a class="headerlink" href="#html-css-files" title="Permalink to this headline">¶</a></h3>
+<p>Adds custom CSS files to the theme</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Here we assume that the file is at _static/css/custom.css</span>
+<span class="n">html_css_files</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;css/custom.css&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="html-external-links">
+<h3><code class="docutils literal notranslate"><span class="pre">html_external_links</span></code><a class="headerlink" href="#html-external-links" title="Permalink to this headline">¶</a></h3>
+<p>If provided, creates external links (e.g. Github) in the top right corner:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;external_links&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">(</span><span class="s2">&quot;Github&quot;</span><span class="p">,</span> <span class="s2">&quot;https://github.com/username/repo&quot;</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;Other&quot;</span><span class="p">,</span> <span class="s2">&quot;https://bla.com&quot;</span><span class="p">)</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="templates">
+<h2>Templates<a class="headerlink" href="#templates" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="layout-html">
+<h3><code class="docutils literal notranslate"><span class="pre">layout.html</span></code><a class="headerlink" href="#layout-html" title="Permalink to this headline">¶</a></h3>
+<p>Blocks on HTML head:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">htmltitle</span></code> - HTML page title</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">css</span></code> - include theme’s CSS files</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">scripts</span></code> - include theme’s javascript files</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">extrahead</span></code> - empty by default, to be used by theme users</p></li>
+</ul>
+<p>Blocks on HTML body:</p>
+<p><code class="docutils literal notranslate"><span class="pre">container</span></code> - whole visible page</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">header</span></code> - fixed header (includes <code class="docutils literal notranslate"><span class="pre">util/navbar.html</span></code>)</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">navbar.html</span></code> - apart from home-link includes <code class="docutils literal notranslate"><span class="pre">util/navlinks.html</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">util/extlinks.html</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sidebar</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">side_links</span></code> - includes <code class="docutils literal notranslate"><span class="pre">util/navlinks.html</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">util/extlinks.html</span></code></p></li>
+<li><p>include all templates listed on <code class="docutils literal notranslate"><span class="pre">html_sidebars</span></code> config</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">document</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">body_header</span></code> - includes <code class="docutils literal notranslate"><span class="pre">util/bodyheader.html</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">body</span></code> - main content generated from ReST documents</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">footer</span></code> - includes <code class="docutils literal notranslate"><span class="pre">util/pagenav.html</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">util/footer.html</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="util-navbar-html">
+<h3><code class="docutils literal notranslate"><span class="pre">util/navbar.html</span></code><a class="headerlink" href="#util-navbar-html" title="Permalink to this headline">¶</a></h3>
+<p>Header content. Left side contains <em>home-link</em> with name.</p>
+<p>Right side contains links from <code class="docutils literal notranslate"><span class="pre">util/navlinks.html</span></code> and <code class="docutils literal notranslate"><span class="pre">util/extlinks.html</span></code>.</p>
+</div>
+<div class="section" id="util-navlinks-html">
+<h3><code class="docutils literal notranslate"><span class="pre">util/navlinks.html</span></code><a class="headerlink" href="#util-navlinks-html" title="Permalink to this headline">¶</a></h3>
+<p>Links taken from TOCs defined on master document.</p>
+</div>
+<div class="section" id="util-extlinks-html">
+<h3><code class="docutils literal notranslate"><span class="pre">util/extlinks.html</span></code><a class="headerlink" href="#util-extlinks-html" title="Permalink to this headline">¶</a></h3>
+<p>External links defined by theme’s user.</p>
+</div>
+<div class="section" id="util-searchbox-html">
+<h3><code class="docutils literal notranslate"><span class="pre">util/searchbox.html</span></code><a class="headerlink" href="#util-searchbox-html" title="Permalink to this headline">¶</a></h3>
+<p>Form to perform site search.</p>
+</div>
+<div class="section" id="util-sidetoc-html">
+<h3><code class="docutils literal notranslate"><span class="pre">util/sidetoc.html</span></code><a class="headerlink" href="#util-sidetoc-html" title="Permalink to this headline">¶</a></h3>
+<p>Navigation from toctree.</p>
+</div>
+<div class="section" id="util-bodyheader-html">
+<h3><code class="docutils literal notranslate"><span class="pre">util/bodyheader.html</span></code><a class="headerlink" href="#util-bodyheader-html" title="Permalink to this headline">¶</a></h3>
+<p>Breadcrumbs and page navigation.</p>
+</div>
+<div class="section" id="util-pagenav-html">
+<h3><code class="docutils literal notranslate"><span class="pre">util/pagenav.html</span></code><a class="headerlink" href="#util-pagenav-html" title="Permalink to this headline">¶</a></h3>
+<p>Links for previous/next page.</p>
+</div>
+<div class="section" id="util-footer-html">
+<h3><code class="docutils literal notranslate"><span class="pre">util/footer.html</span></code><a class="headerlink" href="#util-footer-html" title="Permalink to this headline">¶</a></h3>
+<p>Copyright information.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="about.html"
+       title="previous chapter">← About</a>
+  </li>
+  <li class="next">
+    <a href="who.html"
+       title="next chapter">Who is using <strong>Press</strong> Theme →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2019, romnnn.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

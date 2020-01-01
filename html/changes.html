@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Changes</title>
+    
+      <link rel="stylesheet" href="_static/pygments.css">
+      <link rel="stylesheet" href="_static/theme.css">
+      <link rel="stylesheet" href="_static/romnnn_sphinx_press_theme.css">
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+      
+      <script src="_static/theme-vendors.js"></script>
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="author" title="About these documents" href="about.html" />
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="Demo" href="theme-demo/index.html" />
+  <link rel="prev" title="Who is using Press Theme" href="who.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <div class="home-link-container">
+      <router-link to="index.html" class="home-link">
+      
+        <img class="logo" src="_static/logo.png" alt="doit logo"/>
+      
+        <span class="site-name">Sphinx Press Theme</span>
+    </router-link>
+  </div>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="index.html#sphinx-press-theme"
+         class="nav-link  router-link-active">
+         Docs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="theme-demo/index.html#demo"
+         class="nav-link ">
+         demo
+      </a>
+    </div>
+  
+
+<div class="nav-item">
+  <a href="https://github.com/romnnn/sphinx_press_theme"
+     class="nav-link external">
+       Github <outboundlink/>
+  </a>
+</div>
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="index.html#sphinx-press-theme"
+         class="nav-link  router-link-active">
+         Docs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="theme-demo/index.html#demo"
+         class="nav-link ">
+         demo
+      </a>
+    </div>
+  
+
+<div class="nav-item">
+  <a href="https://github.com/romnnn/sphinx_press_theme"
+     class="nav-link external">
+       Github <outboundlink/>
+  </a>
+</div>
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Search</span>
+    <div class="searchformwrapper">
+      <form autocomplete="off" class="search" action="search.html" method="get">
+        <input type="text" name="q" autocomplete="off" />
+        <input type="submit" value="Go" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#sphinx-press-theme">Docs</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 "><a href="about.html" class="reference internal ">About</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="configuration.html" class="reference internal ">Configuration</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="who.html" class="reference internal ">Who is using Press Theme</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Changes</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#id1" class="reference internal">0.5.0 (2019-10-01)</a></li>
+                
+                  <li class="toctree-l2"><a href="#id2" class="reference internal">0.4.0 (2019-05-27)</a></li>
+                
+                  <li class="toctree-l2"><a href="#id3" class="reference internal">0.3.0 (2019-04-22)</a></li>
+                
+                  <li class="toctree-l2"><a href="#id4" class="reference internal">0.2.0 (2019-03-19)</a></li>
+                
+                  <li class="toctree-l2"><a href="#id5" class="reference internal">0.1.0 (2018-08-07)</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="theme-demo/index.html#demo">demo</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="theme-demo/basic.html" class="reference internal ">Basic Specification</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="theme-demo/admonition.html" class="reference internal ">Admonitions</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="theme-demo/domain.html" class="reference internal ">Domain</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="theme-demo/extensions.html" class="reference internal ">Extensions</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li>Changes</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="who.html"
+       title="previous chapter">← Who is using <strong>Press</strong> Theme</a>
+  </li>
+  <li class="next">
+    <a href="theme-demo/index.html"
+       title="next chapter">Demo →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="changes">
+<h1>Changes<a class="headerlink" href="#changes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>0.5.0 (<em>2019-10-01</em>)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>new CSS styles to handle Sphinx-specific classes (fixes #26)</p></li>
+<li><p>add support for user-provided CSS stylesheets (fixes #25)</p></li>
+<li><p>allow support for user-defined external links</p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>0.4.0 (<em>2019-05-27</em>)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>fix reading cached toctree data</p></li>
+<li><p>fix navlinks that contain <cite>#</cite> anchors</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>0.3.0 (<em>2019-04-22</em>)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>require Sphinx &gt;= 2.0</p></li>
+<li><p>inherit from <cite>basic</cite> theme (previously <cite>none</cite>)</p></li>
+<li><p>support search</p></li>
+<li><p>support showing logo</p></li>
+<li><p>add breadcrumbs</p></li>
+<li><p>add page navigation on page top</p></li>
+<li><p>fix #12: load extensions JS files</p></li>
+<li><p>fix #10: don’t raise error if there is no toctree</p></li>
+<li><p>no navlinks to toctree if there is only one toctree defined</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>0.2.0 (<em>2019-03-19</em>)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>added template domainindex.html</p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>0.1.0 (<em>2018-08-07</em>)<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>initial release</p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="who.html"
+       title="previous chapter">← Who is using <strong>Press</strong> Theme</a>
+  </li>
+  <li class="next">
+    <a href="theme-demo/index.html"
+       title="next chapter">Demo →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2019, romnnn.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

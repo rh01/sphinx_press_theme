@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Domain</title>
+    
+      <link rel="stylesheet" href="../_static/pygments.css">
+      <link rel="stylesheet" href="../_static/theme.css">
+      <link rel="stylesheet" href="../_static/romnnn_sphinx_press_theme.css">
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+      
+      <script src="../_static/theme-vendors.js"></script>
+      <script src="../_static/theme.js" defer></script>
+    
+  <link rel="author" title="About these documents" href="../about.html" />
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" />
+  <link rel="next" title="Extensions" href="extensions.html" />
+  <link rel="prev" title="Admonitions" href="admonition.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <div class="home-link-container">
+      <router-link to="../index.html" class="home-link">
+      
+        <img class="logo" src="../_static/logo.png" alt="doit logo"/>
+      
+        <span class="site-name">Sphinx Press Theme</span>
+    </router-link>
+  </div>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="../index.html#sphinx-press-theme"
+         class="nav-link ">
+         Docs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#demo"
+         class="nav-link  router-link-active">
+         demo
+      </a>
+    </div>
+  
+
+<div class="nav-item">
+  <a href="https://github.com/romnnn/sphinx_press_theme"
+     class="nav-link external">
+       Github <outboundlink/>
+  </a>
+</div>
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="../index.html#sphinx-press-theme"
+         class="nav-link ">
+         Docs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#demo"
+         class="nav-link  router-link-active">
+         demo
+      </a>
+    </div>
+  
+
+<div class="nav-item">
+  <a href="https://github.com/romnnn/sphinx_press_theme"
+     class="nav-link external">
+       Github <outboundlink/>
+  </a>
+</div>
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Search</span>
+    <div class="searchformwrapper">
+      <form autocomplete="off" class="search" action="../search.html" method="get">
+        <input type="text" name="q" autocomplete="off" />
+        <input type="submit" value="Go" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../index.html#sphinx-press-theme">Docs</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../about.html" class="reference internal ">About</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configuration.html" class="reference internal ">Configuration</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../who.html" class="reference internal ">Who is using Press Theme</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../changes.html" class="reference internal ">Changes</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#demo">demo</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 "><a href="basic.html" class="reference internal ">Basic Specification</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="admonition.html" class="reference internal ">Admonitions</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Domain</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#module-foo" class="reference internal">Python</a></li>
+                
+                  <li class="toctree-l2"><a href="#autofunction" class="reference internal">autofunction</a></li>
+                
+                  <li class="toctree-l2"><a href="#autoclass" class="reference internal">autoclass</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="extensions.html" class="reference internal ">Extensions</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      <li><a href="index.html">Demo</a> &raquo;</li>
+    
+    <li>Domain</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="admonition.html"
+       title="previous chapter">← Admonitions</a>
+  </li>
+  <li class="next">
+    <a href="extensions.html"
+       title="next chapter">Extensions →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="domain">
+<h1>Domain<a class="headerlink" href="#domain" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-foo">
+<span id="python"></span><h2>Python<a class="headerlink" href="#module-foo" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="foo.spam">
+<code class="sig-prename descclassname">foo.</code><code class="sig-name descname">spam</code><span class="sig-paren">(</span><em class="sig-param">eggs</em><span class="sig-paren">)</span><a class="headerlink" href="#foo.spam" title="Permalink to this definition">¶</a></dt>
+<dd><p>My spam</p>
+</dd></dl>
+
+</div>
+<div class="section" id="autofunction">
+<h2>autofunction<a class="headerlink" href="#autofunction" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="romnnn_sphinx_press_theme.google_docstring_example">
+<code class="sig-prename descclassname">romnnn_sphinx_press_theme.</code><code class="sig-name descname">google_docstring_example</code><span class="sig-paren">(</span><em class="sig-param">param1: int</em>, <em class="sig-param">param2: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="../_modules/romnnn_sphinx_press_theme.html#google_docstring_example"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#romnnn_sphinx_press_theme.google_docstring_example" title="Permalink to this definition">¶</a></dt>
+<dd><p>Example function with types documented in the docstring.</p>
+<p><a class="reference external" href="https://www.python.org/dev/peps/pep-0484/">PEP 484</a> type annotations are supported. If attribute, parameter, and
+return types are annotated according to <a class="reference external" href="https://www.python.org/dev/peps/pep-0484/">PEP 484</a>, they do not need to be
+included in the docstring:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>param1</strong> – The first parameter.</p></li>
+<li><p><strong>param2</strong> – The second parameter.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The return value. True for success, False otherwise.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="romnnn_sphinx_press_theme.add_toctree_data">
+<code class="sig-prename descclassname">romnnn_sphinx_press_theme.</code><code class="sig-name descname">add_toctree_data</code><span class="sig-paren">(</span><em class="sig-param">app</em>, <em class="sig-param">pagename</em>, <em class="sig-param">templatename</em>, <em class="sig-param">context</em>, <em class="sig-param">doctree</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/romnnn_sphinx_press_theme.html#add_toctree_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#romnnn_sphinx_press_theme.add_toctree_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create toctree_data, used to build sidebar navigation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pagename</strong> (<em>str</em>) – The name of the page</p></li>
+<li><p><strong>templatename</strong> (<em>str</em>) – The name of the templatename</p></li>
+<li><p><strong>context</strong> (<em>dict</em>) – The context</p></li>
+<li><p><strong>doctree</strong> (<em>docutils.nodes.document</em>) – A doctree</p></li>
+</ul>
+</dd>
+</dl>
+<p>Add to <cite>toctree_data</cite> to <cite>context</cite> that will be available on templates.
+Although data is “global”, it is called once per page because current
+page is “highlighted”, and some part of TOC might be collapsed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="autoclass">
+<h2>autoclass<a class="headerlink" href="#autoclass" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="sphinx.environment.collectors.EnvironmentCollector">
+<em class="property">class </em><code class="sig-prename descclassname">sphinx.environment.collectors.</code><code class="sig-name descname">EnvironmentCollector</code><a class="reference internal" href="../_modules/sphinx/environment/collectors.html#EnvironmentCollector"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector" title="Permalink to this definition">¶</a></dt>
+<dd><p>An EnvironmentCollector is a specific data collector from each document.</p>
+<p>It gathers data and stores <code class="xref py py-class docutils literal notranslate"><span class="pre">BuildEnvironment</span></code> as a database.  Examples of specific
+data would be images, download files, section titles, metadatas, index
+entries and toctrees, etc.</p>
+<dl class="method">
+<dt id="sphinx.environment.collectors.EnvironmentCollector.clear_doc">
+<code class="sig-name descname">clear_doc</code><span class="sig-paren">(</span><em class="sig-param">app: sphinx.application.Sphinx</em>, <em class="sig-param">env: sphinx.environment.BuildEnvironment</em>, <em class="sig-param">docname: str</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="../_modules/sphinx/environment/collectors.html#EnvironmentCollector.clear_doc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector.clear_doc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove specified data of a document.</p>
+<p>This method is called on the removal of the document.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.environment.collectors.EnvironmentCollector.get_outdated_docs">
+<code class="sig-name descname">get_outdated_docs</code><span class="sig-paren">(</span><em class="sig-param">app: sphinx.application.Sphinx, env: sphinx.environment.BuildEnvironment, added: Set[str], changed: Set[str], removed: Set[str]</em><span class="sig-paren">)</span> &#x2192; List[str]<a class="reference internal" href="../_modules/sphinx/environment/collectors.html#EnvironmentCollector.get_outdated_docs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector.get_outdated_docs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of docnames to re-read.</p>
+<p>This methods is called before reading the documents.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.environment.collectors.EnvironmentCollector.get_updated_docs">
+<code class="sig-name descname">get_updated_docs</code><span class="sig-paren">(</span><em class="sig-param">app: sphinx.application.Sphinx</em>, <em class="sig-param">env: sphinx.environment.BuildEnvironment</em><span class="sig-paren">)</span> &#x2192; List[str]<a class="reference internal" href="../_modules/sphinx/environment/collectors.html#EnvironmentCollector.get_updated_docs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector.get_updated_docs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of docnames to re-read.</p>
+<p>This methods is called after reading the whole of documents (experimental).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.environment.collectors.EnvironmentCollector.merge_other">
+<code class="sig-name descname">merge_other</code><span class="sig-paren">(</span><em class="sig-param">app: sphinx.application.Sphinx, env: sphinx.environment.BuildEnvironment, docnames: Set[str], other: sphinx.environment.BuildEnvironment</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="../_modules/sphinx/environment/collectors.html#EnvironmentCollector.merge_other"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector.merge_other" title="Permalink to this definition">¶</a></dt>
+<dd><p>Merge in specified data regarding docnames from a different <cite>BuildEnvironment</cite>
+object which coming from a subprocess in parallel builds.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sphinx.environment.collectors.EnvironmentCollector.process_doc">
+<code class="sig-name descname">process_doc</code><span class="sig-paren">(</span><em class="sig-param">app: sphinx.application.Sphinx</em>, <em class="sig-param">doctree: docutils.nodes.document</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="../_modules/sphinx/environment/collectors.html#EnvironmentCollector.process_doc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector.process_doc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process a document and gather specific data from it.</p>
+<p>This method is called after the document is read.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="admonition.html"
+       title="previous chapter">← Admonitions</a>
+  </li>
+  <li class="next">
+    <a href="extensions.html"
+       title="next chapter">Extensions →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2019, romnnn.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

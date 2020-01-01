@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>romnnn_sphinx_press_theme</title>
+    
+      <link rel="stylesheet" href="../_static/pygments.css">
+      <link rel="stylesheet" href="../_static/theme.css">
+      <link rel="stylesheet" href="../_static/romnnn_sphinx_press_theme.css">
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+      
+      <script src="../_static/theme-vendors.js"></script>
+      <script src="../_static/theme.js" defer></script>
+    
+  <link rel="author" title="About these documents" href="../about.html" />
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <div class="home-link-container">
+      <router-link to="../index.html" class="home-link">
+      
+        <img class="logo" src="../_static/logo.png" alt="doit logo"/>
+      
+        <span class="site-name">Sphinx Press Theme</span>
+    </router-link>
+  </div>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="../index.html#sphinx-press-theme"
+         class="nav-link ">
+         Docs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../theme-demo/index.html#demo"
+         class="nav-link ">
+         demo
+      </a>
+    </div>
+  
+
+<div class="nav-item">
+  <a href="https://github.com/romnnn/sphinx_press_theme"
+     class="nav-link external">
+       Github <outboundlink/>
+  </a>
+</div>
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="../index.html#sphinx-press-theme"
+         class="nav-link ">
+         Docs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="../theme-demo/index.html#demo"
+         class="nav-link ">
+         demo
+      </a>
+    </div>
+  
+
+<div class="nav-item">
+  <a href="https://github.com/romnnn/sphinx_press_theme"
+     class="nav-link external">
+       Github <outboundlink/>
+  </a>
+</div>
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Search</span>
+    <div class="searchformwrapper">
+      <form autocomplete="off" class="search" action="../search.html" method="get">
+        <input type="text" name="q" autocomplete="off" />
+        <input type="submit" value="Go" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../index.html#sphinx-press-theme">Docs</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../about.html" class="reference internal ">About</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configuration.html" class="reference internal ">Configuration</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../who.html" class="reference internal ">Who is using Press Theme</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../changes.html" class="reference internal ">Changes</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../theme-demo/index.html#demo">demo</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../theme-demo/basic.html" class="reference internal ">Basic Specification</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../theme-demo/admonition.html" class="reference internal ">Admonitions</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../theme-demo/domain.html" class="reference internal ">Domain</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../theme-demo/extensions.html" class="reference internal ">Extensions</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      <li><a href="index.html">Module code</a> &raquo;</li>
+    
+    <li>romnnn_sphinx_press_theme</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <h1>Source code for romnnn_sphinx_press_theme</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="n">path</span>
+
+<span class="kn">from</span> <span class="nn">docutils</span> <span class="kn">import</span> <span class="n">nodes</span>
+<span class="kn">from</span> <span class="nn">sphinx.environment.collectors</span> <span class="kn">import</span> <span class="n">EnvironmentCollector</span>
+<span class="kn">from</span> <span class="nn">sphinx</span> <span class="kn">import</span> <span class="n">addnodes</span>
+<span class="kn">from</span> <span class="nn">sphinx.util.osutil</span> <span class="kn">import</span> <span class="n">relative_uri</span>
+
+<span class="n">__version__</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">SimpleTocTreeCollector</span><span class="p">(</span><span class="n">EnvironmentCollector</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A TocTree collector that saves toctrees in a simple dict.</span>
+
+<span class="sd">    sphinx.environment.collectors.toctree.TocTreeCollector saves</span>
+<span class="sd">    TocTree as docutils.nodes which are hard to work with...</span>
+
+<span class="sd">    Executed once per document/page, at sphinx&#39;s &quot;read&quot; phase.</span>
+
+<span class="sd">    Saved data example:</span>
+<span class="sd">    &gt;&gt;&gt; {</span>
+<span class="sd">    &gt;&gt;&gt;  &#39;sections&#39;: [{&#39;title&#39;: &#39;Demo&#39;, &#39;href&#39;: &#39;#demo&#39;}],</span>
+<span class="sd">    &gt;&gt;&gt;  &#39;toctrees&#39;: [&lt;toctree: &gt;]</span>
+<span class="sd">    &gt;&gt;&gt; }</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">enable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">app</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">enable</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+        <span class="c1"># env is populated from cache, if not cache create/initalize attibute</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="p">,</span> <span class="s1">&#39;toc_dict&#39;</span><span class="p">):</span>
+            <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">toc_dict</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">def</span> <span class="nf">clear_doc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">app</span><span class="p">,</span> <span class="n">env</span><span class="p">,</span> <span class="n">docname</span><span class="p">):</span>
+        <span class="n">env</span><span class="o">.</span><span class="n">toc_dict</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">docname</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">merge_other</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">app</span><span class="p">,</span> <span class="n">env</span><span class="p">,</span> <span class="n">docnames</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">docname</span> <span class="ow">in</span> <span class="n">docnames</span><span class="p">:</span>
+            <span class="n">env</span><span class="o">.</span><span class="n">toc_dict</span><span class="p">[</span><span class="n">docname</span><span class="p">]</span> <span class="o">=</span> <span class="n">other</span><span class="o">.</span><span class="n">toc_dict</span><span class="p">[</span><span class="n">docname</span><span class="p">]</span>
+
+
+    <span class="k">def</span> <span class="nf">process_doc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">app</span><span class="p">,</span> <span class="n">doctree</span><span class="p">):</span>
+        <span class="n">docname</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">docname</span> <span class="c1"># sphinx mutates this, ouch!!!</span>
+
+        <span class="c1"># print(f&quot;================ Collector\n{docname}\n============\n&quot;)</span>
+        <span class="c1"># get 1 level document toc (sections)</span>
+        <span class="n">section_nodes</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">doctree</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">nodes</span><span class="o">.</span><span class="n">section</span><span class="p">)]</span>
+        <span class="c1"># if first level is a single section,</span>
+        <span class="c1"># ignore it and use second level of sections</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">section_nodes</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">section2_nodes</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">section_nodes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                              <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">nodes</span><span class="o">.</span><span class="n">section</span><span class="p">)]</span>
+            <span class="k">if</span> <span class="n">section2_nodes</span><span class="p">:</span> <span class="c1"># do not replace with level-2 sections if None</span>
+                <span class="n">section_nodes</span> <span class="o">=</span> <span class="n">section2_nodes</span>
+
+        <span class="n">sections</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">section_nodes</span><span class="p">:</span>
+            <span class="n">sections</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+                <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">node</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">astext</span><span class="p">(),</span>
+                <span class="s1">&#39;href&#39;</span><span class="p">:</span> <span class="s1">&#39;#</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">node</span><span class="p">[</span><span class="s1">&#39;ids&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span>
+            <span class="p">})</span>
+
+        <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">toc_dict</span><span class="p">[</span><span class="n">docname</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;sections&#39;</span><span class="p">:</span> <span class="n">sections</span><span class="p">,</span>
+            <span class="s1">&#39;toctrees&#39;</span><span class="p">:</span> <span class="n">doctree</span><span class="o">.</span><span class="n">traverse</span><span class="p">(</span><span class="n">addnodes</span><span class="o">.</span><span class="n">toctree</span><span class="p">)</span>
+        <span class="p">}</span>
+
+
+<div class="viewcode-block" id="google_docstring_example"><a class="viewcode-back" href="../theme-demo/domain.html#romnnn_sphinx_press_theme.google_docstring_example">[docs]</a><span class="k">def</span> <span class="nf">google_docstring_example</span><span class="p">(</span><span class="n">param1</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">param2</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Example function with types documented in the docstring.</span>
+
+<span class="sd">        `PEP 484`_ type annotations are supported. If attribute, parameter, and</span>
+<span class="sd">        return types are annotated according to `PEP 484`_, they do not need to be</span>
+<span class="sd">        included in the docstring:</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            param1: The first parameter.</span>
+<span class="sd">            param2: The second parameter.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: The return value. True for success, False otherwise.</span>
+
+<span class="sd">        .. _PEP 484:</span>
+<span class="sd">            https://www.python.org/dev/peps/pep-0484/</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">param1</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">param2</span> <span class="o">==</span> <span class="s2">&quot;Hello World&quot;</span></div>
+
+
+<div class="viewcode-block" id="add_toctree_data"><a class="viewcode-back" href="../theme-demo/domain.html#romnnn_sphinx_press_theme.add_toctree_data">[docs]</a><span class="k">def</span> <span class="nf">add_toctree_data</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">pagename</span><span class="p">,</span> <span class="n">templatename</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">doctree</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Create toctree_data, used to build sidebar navigation</span>
+
+<span class="sd">    :param pagename: The name of the page</span>
+<span class="sd">    :type pagename: str</span>
+<span class="sd">    :param templatename: The name of the templatename</span>
+<span class="sd">    :type templatename: str</span>
+<span class="sd">    :param context: The context</span>
+<span class="sd">    :type context: dict</span>
+<span class="sd">    :param doctree: A doctree</span>
+<span class="sd">    :type doctree: docutils.nodes.document</span>
+
+<span class="sd">    Add to `toctree_data` to `context` that will be available on templates.</span>
+<span class="sd">    Although data is &quot;global&quot;, it is called once per page because current</span>
+<span class="sd">    page is &quot;highlighted&quot;, and some part of TOC might be collapsed.</span>
+
+<span class="sd">    :return: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># print(f&quot;---------- Context\n{pagename}\n-------------\n&quot;)</span>
+
+    <span class="c1"># start from master_doc</span>
+    <span class="n">master</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">get_doctree</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">master_doc</span><span class="p">)</span>
+
+    <span class="c1"># each toctree will create navigation section</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># list of top level toctrees in master_doc</span>
+    <span class="k">for</span> <span class="n">tree</span> <span class="ow">in</span> <span class="n">master</span><span class="o">.</span><span class="n">traverse</span><span class="p">(</span><span class="n">addnodes</span><span class="o">.</span><span class="n">toctree</span><span class="p">):</span>
+
+        <span class="c1"># special case for toctree that includes a single item</span>
+        <span class="c1"># that contains a nested toctree.</span>
+        <span class="c1"># In this case, just use the referenced toctree directly</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tree</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">])</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">entry_docname</span> <span class="o">=</span> <span class="n">tree</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">toctrees</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">toc_dict</span><span class="p">[</span><span class="n">entry_docname</span><span class="p">][</span><span class="s1">&#39;toctrees&#39;</span><span class="p">]</span>
+
+            <span class="k">if</span> <span class="n">toctrees</span><span class="p">:</span>
+                <span class="c1"># FIXME</span>
+                <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">toctrees</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Press: Not supported more then one toctree on nested toctree&quot;</span>
+                <span class="n">tree</span> <span class="o">=</span> <span class="n">toctrees</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="n">current0</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># same page might have multiple tocs</span>
+
+        <span class="c1"># add toc tree items, expand one more level if toctree is current page</span>
+        <span class="n">entries</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">title</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">tree</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">title</span><span class="p">:</span>
+                <span class="n">title</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">titles</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">astext</span><span class="p">()</span>
+
+            <span class="n">current1</span> <span class="o">=</span> <span class="p">(</span><span class="n">pagename</span> <span class="o">==</span> <span class="n">name</span><span class="p">)</span>
+            <span class="n">children</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">if</span> <span class="n">current1</span><span class="p">:</span>
+                <span class="n">current0</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="c1"># if current, add another level</span>
+                <span class="n">children</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">toc_dict</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;sections&#39;</span><span class="p">]</span>
+            <span class="c1"># add page_toc for current page</span>
+            <span class="n">entries</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+                <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+                <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">title</span><span class="p">,</span>
+                <span class="s1">&#39;current&#39;</span><span class="p">:</span> <span class="n">current1</span><span class="p">,</span>
+                <span class="s1">&#39;children&#39;</span><span class="p">:</span> <span class="n">children</span><span class="p">,</span>
+            <span class="p">})</span>
+
+        <span class="n">toc_docname</span> <span class="o">=</span> <span class="n">tree</span><span class="p">[</span><span class="s1">&#39;parent&#39;</span><span class="p">]</span> <span class="c1"># docname where this toc appears</span>
+        <span class="n">title</span> <span class="o">=</span> <span class="n">tree</span><span class="p">[</span><span class="s1">&#39;caption&#39;</span><span class="p">]</span>
+
+        <span class="c1"># Anchor element is the section containing the toc,</span>
+        <span class="c1"># as the toc itself does not contain ID.</span>
+        <span class="n">anchor_id</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+        <span class="c1"># tree.parent is the parent docutils node.</span>
+        <span class="c1"># First parent is &quot;compound&quot; node toctree-wrapper,</span>
+        <span class="c1"># second parent is the section containing the toctree</span>
+        <span class="n">toc_section</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span>
+        <span class="k">if</span> <span class="n">toc_section</span><span class="p">[</span><span class="s1">&#39;ids&#39;</span><span class="p">]:</span> <span class="c1"># no id means toc actually not in a section</span>
+            <span class="c1"># TODO: should we be strict about toc being inside a section</span>
+            <span class="n">anchor_id</span> <span class="o">=</span> <span class="n">toc_section</span><span class="p">[</span><span class="s1">&#39;ids&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">title</span><span class="p">:</span>
+                <span class="n">title</span> <span class="o">=</span> <span class="n">toc_section</span><span class="p">[</span><span class="s1">&#39;names&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="c1"># sphinx `pathto` does not play nice with anchors when</span>
+        <span class="c1"># `allow_sharp_as_current_path` is True</span>
+        <span class="n">baseuri</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_target_uri</span><span class="p">(</span><span class="n">pagename</span><span class="p">)</span><span class="o">.</span><span class="n">rsplit</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">toc_uri</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_target_uri</span><span class="p">(</span><span class="n">toc_docname</span><span class="p">)</span><span class="o">.</span><span class="n">rsplit</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">toc_href</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">#</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">relative_uri</span><span class="p">(</span><span class="n">baseuri</span><span class="p">,</span> <span class="n">toc_uri</span><span class="p">),</span> <span class="n">anchor_id</span><span class="p">)</span>
+        <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+            <span class="s1">&#39;docname&#39;</span><span class="p">:</span> <span class="n">toc_docname</span><span class="p">,</span>
+            <span class="s1">&#39;href&#39;</span><span class="p">:</span> <span class="n">toc_href</span><span class="p">,</span>
+            <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">title</span><span class="p">,</span>
+            <span class="s1">&#39;current&#39;</span><span class="p">:</span> <span class="n">current0</span><span class="p">,</span>
+            <span class="s1">&#39;entries&#39;</span><span class="p">:</span> <span class="n">entries</span><span class="p">,</span>
+        <span class="p">})</span>
+    <span class="n">context</span><span class="p">[</span><span class="s1">&#39;toctree_data&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">res</span></div>
+
+
+
+<span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="n">app</span><span class="p">):</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">add_env_collector</span><span class="p">(</span><span class="n">SimpleTocTreeCollector</span><span class="p">)</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;html-page-context&#39;</span><span class="p">,</span> <span class="n">add_toctree_data</span><span class="p">)</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">add_html_theme</span><span class="p">(</span><span class="s1">&#39;press&#39;</span><span class="p">,</span> <span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)))</span>
+</pre></div>
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2019, romnnn.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

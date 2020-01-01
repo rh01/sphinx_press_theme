@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Demo</title>
+    
+      <link rel="stylesheet" href="../_static/pygments.css">
+      <link rel="stylesheet" href="../_static/theme.css">
+      <link rel="stylesheet" href="../_static/romnnn_sphinx_press_theme.css">
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+      
+      <script src="../_static/theme-vendors.js"></script>
+      <script src="../_static/theme.js" defer></script>
+    
+  <link rel="author" title="About these documents" href="../about.html" />
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" />
+  <link rel="next" title="Basic Specification" href="basic.html" />
+  <link rel="prev" title="Changes" href="../changes.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <div class="home-link-container">
+      <router-link to="../index.html" class="home-link">
+      
+        <img class="logo" src="../_static/logo.png" alt="doit logo"/>
+      
+        <span class="site-name">Sphinx Press Theme</span>
+    </router-link>
+  </div>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="../index.html#sphinx-press-theme"
+         class="nav-link ">
+         Docs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="#demo"
+         class="nav-link ">
+         demo
+      </a>
+    </div>
+  
+
+<div class="nav-item">
+  <a href="https://github.com/romnnn/sphinx_press_theme"
+     class="nav-link external">
+       Github <outboundlink/>
+  </a>
+</div>
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="../index.html#sphinx-press-theme"
+         class="nav-link ">
+         Docs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="#demo"
+         class="nav-link ">
+         demo
+      </a>
+    </div>
+  
+
+<div class="nav-item">
+  <a href="https://github.com/romnnn/sphinx_press_theme"
+     class="nav-link external">
+       Github <outboundlink/>
+  </a>
+</div>
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Search</span>
+    <div class="searchformwrapper">
+      <form autocomplete="off" class="search" action="../search.html" method="get">
+        <input type="text" name="q" autocomplete="off" />
+        <input type="submit" value="Go" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../index.html#sphinx-press-theme">Docs</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../about.html" class="reference internal ">About</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configuration.html" class="reference internal ">Configuration</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../who.html" class="reference internal ">Who is using Press Theme</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../changes.html" class="reference internal ">Changes</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="#demo">demo</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="basic.html" class="reference internal ">Basic Specification</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="admonition.html" class="reference internal ">Admonitions</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="domain.html" class="reference internal ">Domain</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="extensions.html" class="reference internal ">Extensions</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+    <li>Demo</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="../changes.html"
+       title="previous chapter">← Changes</a>
+  </li>
+  <li class="next">
+    <a href="basic.html"
+       title="next chapter">Basic Specification →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="demo">
+<h1>Demo<a class="headerlink" href="#demo" title="Permalink to this headline">¶</a></h1>
+<p>Showcase of Sphinx features using <strong>Press</strong> theme.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basic.html">Basic Specification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="basic.html#table-of-contents">Table of contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basic.html#list">List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basic.html#literal-blocks">Literal blocks:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basic.html#block-quotes">Block quotes:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basic.html#simple-table">Simple Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basic.html#citation">Citation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basic.html#internal-reference">Internal reference</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="admonition.html">Admonitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="admonition.html#admonition">admonition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admonition.html#caution">caution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admonition.html#danger">danger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admonition.html#error">error</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admonition.html#hint">hint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admonition.html#important">important</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admonition.html#note">note</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admonition.html#tip">tip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admonition.html#warning">warning</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="domain.html">Domain</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="domain.html#module-foo">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="domain.html#autofunction">autofunction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="domain.html#autoclass">autoclass</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">Extensions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="extensions.html#mathjax">mathjax</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="../changes.html"
+       title="previous chapter">← Changes</a>
+  </li>
+  <li class="next">
+    <a href="basic.html"
+       title="next chapter">Basic Specification →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2019, romnnn.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

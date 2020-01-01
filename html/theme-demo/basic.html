@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Basic Specification</title>
+    
+      <link rel="stylesheet" href="../_static/pygments.css">
+      <link rel="stylesheet" href="../_static/theme.css">
+      <link rel="stylesheet" href="../_static/romnnn_sphinx_press_theme.css">
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+      
+      <script src="../_static/theme-vendors.js"></script>
+      <script src="../_static/theme.js" defer></script>
+    
+  <link rel="author" title="About these documents" href="../about.html" />
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" />
+  <link rel="next" title="Admonitions" href="admonition.html" />
+  <link rel="prev" title="Demo" href="index.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <div class="home-link-container">
+      <router-link to="../index.html" class="home-link">
+      
+        <img class="logo" src="../_static/logo.png" alt="doit logo"/>
+      
+        <span class="site-name">Sphinx Press Theme</span>
+    </router-link>
+  </div>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="../index.html#sphinx-press-theme"
+         class="nav-link ">
+         Docs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#demo"
+         class="nav-link  router-link-active">
+         demo
+      </a>
+    </div>
+  
+
+<div class="nav-item">
+  <a href="https://github.com/romnnn/sphinx_press_theme"
+     class="nav-link external">
+       Github <outboundlink/>
+  </a>
+</div>
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="../index.html#sphinx-press-theme"
+         class="nav-link ">
+         Docs
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#demo"
+         class="nav-link  router-link-active">
+         demo
+      </a>
+    </div>
+  
+
+<div class="nav-item">
+  <a href="https://github.com/romnnn/sphinx_press_theme"
+     class="nav-link external">
+       Github <outboundlink/>
+  </a>
+</div>
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Search</span>
+    <div class="searchformwrapper">
+      <form autocomplete="off" class="search" action="../search.html" method="get">
+        <input type="text" name="q" autocomplete="off" />
+        <input type="submit" value="Go" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../index.html#sphinx-press-theme">Docs</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 "><a href="../about.html" class="reference internal ">About</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../configuration.html" class="reference internal ">Configuration</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../who.html" class="reference internal ">Who is using Press Theme</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="../changes.html" class="reference internal ">Changes</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#demo">demo</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Basic Specification</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#table-of-contents" class="reference internal">Table of contents</a></li>
+                
+                  <li class="toctree-l2"><a href="#list" class="reference internal">List</a></li>
+                
+                  <li class="toctree-l2"><a href="#literal-blocks" class="reference internal">Literal blocks:</a></li>
+                
+                  <li class="toctree-l2"><a href="#block-quotes" class="reference internal">Block quotes:</a></li>
+                
+                  <li class="toctree-l2"><a href="#simple-table" class="reference internal">Simple Table</a></li>
+                
+                  <li class="toctree-l2"><a href="#citation" class="reference internal">Citation</a></li>
+                
+                  <li class="toctree-l2"><a href="#internal-reference" class="reference internal">Internal reference</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="admonition.html" class="reference internal ">Admonitions</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="domain.html" class="reference internal ">Domain</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="extensions.html" class="reference internal ">Extensions</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      <li><a href="index.html">Demo</a> &raquo;</li>
+    
+    <li>Basic Specification</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="index.html"
+       title="previous chapter">← Demo</a>
+  </li>
+  <li class="next">
+    <a href="admonition.html"
+       title="next chapter">Admonitions →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="basic-specification">
+<h1><a class="toc-backref" href="#id4">Basic Specification</a><a class="headerlink" href="#basic-specification" title="Permalink to this headline">¶</a></h1>
+<p>Paragraphs contain text and may contain inline markup: <em>emphasis</em>, <strong>strong emphasis</strong>, <cite>interpreted text</cite>, <code class="docutils literal notranslate"><span class="pre">inline</span> <span class="pre">literals</span></code>, standalone hyperlinks (<a class="reference external" href="http://www.python.org">http://www.python.org</a>), external hyperlinks (<a class="reference external" href="http://www.python.org">Python</a>), internal cross-references (<a class="reference internal" href="#example">example</a>), footnote references (<a class="footnote-reference brackets" href="#id3" id="id1">1</a>), citation references (<a class="reference internal" href="#cit2002" id="id2"><span>[CIT2002]</span></a>), substitution references (foo <strong>bar</strong>), and <span class="target" id="inline-internal-targets">inline internal targets</span>.</p>
+<div class="section" id="table-of-contents">
+<h2><a class="toc-backref" href="#id5">Table of contents</a><a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#basic-specification" id="id4">Basic Specification</a></p>
+<ul>
+<li><p><a class="reference internal" href="#table-of-contents" id="id5">Table of contents</a></p></li>
+<li><p><a class="reference internal" href="#list" id="id6">List</a></p>
+<ul>
+<li><p><a class="reference internal" href="#bullet-lists" id="id7">Bullet lists:</a></p></li>
+<li><p><a class="reference internal" href="#enumerated-lists" id="id8">Enumerated lists:</a></p></li>
+<li><p><a class="reference internal" href="#definition-lists" id="id9">Definition lists:</a></p></li>
+<li><p><a class="reference internal" href="#field-lists" id="id10">Field lists:</a></p></li>
+<li><p><a class="reference internal" href="#option-lists-for-listing-command-line-options" id="id11">Option lists, for listing command-line options:</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#literal-blocks" id="id12">Literal blocks:</a></p></li>
+<li><p><a class="reference internal" href="#block-quotes" id="id13">Block quotes:</a></p></li>
+<li><p><a class="reference internal" href="#simple-table" id="id14">Simple Table</a></p></li>
+<li><p><a class="reference internal" href="#citation" id="id15">Citation</a></p></li>
+<li><p><a class="reference internal" href="#internal-reference" id="id16">Internal reference</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="list">
+<h2><a class="toc-backref" href="#id6">List</a><a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="bullet-lists">
+<h3><a class="toc-backref" href="#id7">Bullet lists:</a><a class="headerlink" href="#bullet-lists" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>This is a bullet list. 😍 🐍</p></li>
+<li><p>Bullets can be “*”, “+”, or “-“.</p></li>
+</ul>
+</div>
+<div class="section" id="enumerated-lists">
+<h3><a class="toc-backref" href="#id8">Enumerated lists:</a><a class="headerlink" href="#enumerated-lists" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>This is an enumerated list.</p></li>
+<li><p>Enumerators may be arabic numbers, letters, or roman
+numerals.</p></li>
+</ol>
+</div>
+<div class="section" id="definition-lists">
+<h3><a class="toc-backref" href="#id9">Definition lists:</a><a class="headerlink" href="#definition-lists" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>what</dt><dd><p>Definition lists associate a term with a definition.</p>
+</dd>
+<dt>how</dt><dd><p>The term is a one-line phrase, and the definition is one
+or more paragraphs or body elements, indented relative to
+the term.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="field-lists">
+<h3><a class="toc-backref" href="#id10">Field lists:</a><a class="headerlink" href="#field-lists" title="Permalink to this headline">¶</a></h3>
+<dl class="field-list">
+<dt class="field-odd">what</dt>
+<dd class="field-odd"><p>Field lists map field names to field bodies, like
+database records.  They are often part of an extension
+syntax.</p>
+</dd>
+<dt class="field-even">how</dt>
+<dd class="field-even"><p>The field marker is a colon, the field name, and a
+colon.</p>
+<p>The field body may contain one or more body elements,
+indented relative to the field marker.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="option-lists-for-listing-command-line-options">
+<h3><a class="toc-backref" href="#id11">Option lists, for listing command-line options:</a><a class="headerlink" href="#option-lists-for-listing-command-line-options" title="Permalink to this headline">¶</a></h3>
+<dl class="option-list">
+<dt><kbd><span class="option">-a</span></kbd></dt>
+<dd><p>command-line option “a”</p>
+</dd>
+<dt><kbd><span class="option">-b <var>file</var></span></kbd></dt>
+<dd><p>options can have arguments
+and long descriptions</p>
+</dd>
+<dt><kbd><span class="option">--long</span></kbd></dt>
+<dd><p>options can be long also</p>
+</dd>
+<dt><kbd><span class="option">--input=<var>file</var></span></kbd></dt>
+<dd><p>long options can also have
+arguments</p>
+</dd>
+<dt><kbd><span class="option">/V</span></kbd></dt>
+<dd><p>DOS/VMS-style options too</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="literal-blocks">
+<h2><a class="toc-backref" href="#id12">Literal blocks:</a><a class="headerlink" href="#literal-blocks" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">literal_block</span><span class="p">:</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;is left as-is&#39;</span>
+    <span class="n">spaces_and_linebreaks</span> <span class="o">=</span> <span class="s1">&#39;are preserved&#39;</span>
+    <span class="n">markup_processing</span> <span class="o">=</span> <span class="kc">None</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="block-quotes">
+<h2><a class="toc-backref" href="#id13">Block quotes:</a><a class="headerlink" href="#block-quotes" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>This theory, that is mine, is mine.</p>
+<p class="attribution">—Anne Elk (Miss)</p>
+</div></blockquote>
+<blockquote>
+<div><dl class="simple">
+<dt>You can nest</dt><dd><p>And nest more</p>
+</dd>
+</dl>
+</div></blockquote>
+</div>
+<div class="section" id="simple-table">
+<h2><a class="toc-backref" href="#id14">Simple Table</a><a class="headerlink" href="#simple-table" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Header row, column 1</p></th>
+<th class="head"><p>Header 2</p></th>
+<th class="head"><p>Header 3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>body row 1, column 1</p></td>
+<td><p>column 2</p></td>
+<td><p>column 3</p></td>
+</tr>
+<tr class="row-odd"><td><p>body row 2</p></td>
+<td colspan="2"><p>Cells may span columns</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="citation">
+<h2><a class="toc-backref" href="#id15">Citation</a><a class="headerlink" href="#citation" title="Permalink to this headline">¶</a></h2>
+<dl class="footnote brackets">
+<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>A footnote contains body elements, consistently
+indented by at least 3 spaces.</p>
+</dd>
+</dl>
+<dl class="citation">
+<dt class="label" id="cit2002"><span class="brackets"><a class="fn-backref" href="#id2">CIT2002</a></span></dt>
+<dd><p>Just like a footnote, except the label is
+textual.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="internal-reference">
+<h2><a class="toc-backref" href="#id16">Internal reference</a><a class="headerlink" href="#internal-reference" title="Permalink to this headline">¶</a></h2>
+<p id="example">The “_example” target above points to this paragraph.</p>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="index.html"
+       title="previous chapter">← Demo</a>
+  </li>
+  <li class="next">
+    <a href="admonition.html"
+       title="next chapter">Admonitions →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2019, romnnn.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1 with <a href="https://github.com/romnnn/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>
