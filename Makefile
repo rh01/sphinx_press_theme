@@ -1,6 +1,9 @@
 install:
 	cd ui && npm install --no-package-lock
 
+ui:
+	cd ui && npm install --no-package-lock && npm run build
+
 docs:
 	cd ui && npm run build
 	pip3 install -e .
