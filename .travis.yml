@@ -21,6 +21,7 @@ jobs:
       deploy:
         provider: pages
         local_dir: docs/build
+        cleanup: false
         token: $GH_TOKEN
         keep_history: true
         on:
