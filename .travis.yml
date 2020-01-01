@@ -20,7 +20,7 @@ jobs:
       python: 3.6
       deploy:
         provider: pages
-        local_dir: docs/build
+        local_dir: docs/build/html
         skip_cleanup: true
         token: $GH_TOKEN
         keep_history: true
