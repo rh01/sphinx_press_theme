@@ -1,6 +1,9 @@
 # romnnn_sphinx_press_theme
 
 [![Build Status](https://travis-ci.com/romnnn/sphinx_press_theme.svg?branch=master)](https://travis-ci.com/romnnn/sphinx_press_theme)
+[![PyPI License](https://img.shields.io/pypi/l/romnnn_sphinx_press_theme)](https://pypi.org/project/romnnn_sphinx_press_theme/)
+[![PyPI Version](https://img.shields.io/pypi/v/romnnn_sphinx_press_theme)](https://pypi.org/project/romnnn_sphinx_press_theme/)
+[![PyPI Python versions](https://img.shields.io/pypi/pyversions/romnnn_sphinx_press_theme)](https://pypi.org/project/romnnn_sphinx_press_theme/)
 
 See a [live demo](https://romnnn.github.io/sphinx_press_theme).
 
