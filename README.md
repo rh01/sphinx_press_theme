@@ -1,5 +1,11 @@
 # romnnn_sphinx_press_theme
 
+![Example 1](images/example1.png)
+![Example 2](images/example2.png)
+![Example 3](images/example3.png)
+![Example 4](images/example4.png)
+![Example 5](images/example5.png)
+
 This is a fork of the original [sphinx_press_theme](https://schettino72.github.io/sphinx_press_site/) by [schettino72](),
 which is a modern and responsive theme for python's [Sphinx](http://www.sphinx-doc.org) documentation generator.
 
