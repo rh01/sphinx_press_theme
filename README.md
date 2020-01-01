@@ -1,10 +1,8 @@
 # romnnn_sphinx_press_theme
 
-![Example 1](images/example1.png)
-![Example 2](images/example2.png)
-![Example 3](images/example3.png)
-![Example 4](images/example4.png)
-![Example 5](images/example5.png)
+[![Build Status](https://travis-ci.com/romnnn/sphinx_press_theme.svg?branch=master)](https://travis-ci.com/romnnn/sphinx_press_theme)
+
+See a [live demo](https://romnnn.github.io/sphinx_press_theme).
 
 This is a fork of the original [sphinx_press_theme](https://schettino72.github.io/sphinx_press_site/) by [schettino72](),
 which is a modern and responsive theme for python's [Sphinx](http://www.sphinx-doc.org) documentation generator.
@@ -18,7 +16,7 @@ The theme is based on [VuePress](https://vuepress.vuejs.org/) and uses
 
 First install the theme:
 ```bash
-pip install sphinx_press_theme
+pip install romnnn_sphinx_press_theme
 ```
 
 To use the theme, set the theme name to ``press`` in your sphinx project's ``conf.py``:
