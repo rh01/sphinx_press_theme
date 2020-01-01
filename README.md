@@ -18,11 +18,11 @@ The theme is based on [VuePress](https://vuepress.vuejs.org/) and uses
 
 First install the theme:
 ```bash
-$ pip install sphinx_press_theme
+pip install sphinx_press_theme
 ```
 
 To use the theme, set the theme name to ``press`` in your sphinx project's ``conf.py``:
-```
+```python
 html_theme = "press"
 ```
 
