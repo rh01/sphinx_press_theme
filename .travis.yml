@@ -15,13 +15,13 @@ jobs:
     - stage: deploy
       script: make docs
       before_script:
-        - pipenv install --dev
+        - pipenv install --dev --skip-lock
         - make install
       python: 3.6
       deploy:
         provider: pages
         local_dir: docs/build
-        cleanup: false
+        skip_cleanup: true
         token: $GH_TOKEN
         keep_history: true
         on:
