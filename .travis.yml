@@ -1,4 +1,5 @@
 language: python
+os: linux
 python:
   - 3.8
   - 3.7
@@ -18,9 +19,8 @@ jobs:
       python: 3.6
       deploy:
         provider: pages
-        local-dir: docs/build
-        skip-cleanup: true
-        github-token: $GH_TOKEN
-        keep-history: true
+        local_dir: docs/build
+        token: $GH_TOKEN
+        keep_history: true
         on:
            branch: master
