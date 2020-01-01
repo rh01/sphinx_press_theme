@@ -8,7 +8,7 @@ setup(
     version="0.5.1",
     url="https://github.com/romnnn/sphinx_press_theme",
     license="MIT",
-    author="romnnn",
+    author="romnn",
     description="A Sphinx-doc theme based on Vuepress",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -23,7 +23,7 @@ setup(
         ]
     },
     entry_points={"sphinx.html_themes": ["press = romnnn_sphinx_press_theme"]},
-    install_requires=["sphinx>=2.0.0"],
+    install_requires=["sphinx>=2.0.0", "sphinxemoji"],
     classifiers=[
         "Framework :: Sphinx",
         "Framework :: Sphinx :: Theme",
