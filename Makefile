@@ -1,3 +1,6 @@
+install:
+	cd ui && npm install
+
 docs:
 	cd ui && npm run build
 	pip3 install -e .
