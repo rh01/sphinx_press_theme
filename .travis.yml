@@ -26,3 +26,13 @@ jobs:
         keep_history: true
         on:
            branch: master
+    - stage: deploy
+      script: pip install -e .
+      python: 3.6
+      deploy:
+        provider: pypi
+        username: __token__
+        password:
+          secure: <TODO>
+        on:
+          tags: true
