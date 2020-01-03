@@ -1,8 +1,13 @@
 Who is using **Press** Theme
 ============================
 
-If you this theme please add your site below:
+If you this theme please add your site below.
 
+- t.b.a
+
+The original sphinx_press_theme_ is used by:
+
+.. _sphinx_press_theme: https://schettino72.github.io/sphinx_press_site/
 
 - `doit <https://pydoit.org>`_
 - `Crudcast <https://crudcast.readthedocs.io/en/latest/>`_
