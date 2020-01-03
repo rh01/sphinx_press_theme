@@ -52,7 +52,7 @@
     <div class="nav-item">
       <a href="../theme-demo/index.html#demo"
          class="nav-link ">
-         demo
+         Demo
       </a>
     </div>
   
@@ -86,7 +86,7 @@
     <div class="nav-item">
       <a href="../theme-demo/index.html#demo"
          class="nav-link ">
-         demo
+         Demo
       </a>
     </div>
   
@@ -146,7 +146,7 @@
   
     <div class="sidebar-group">
       <p class="caption">
-        <span class="caption-text"><a href="../theme-demo/index.html#demo">demo</a></span>
+        <span class="caption-text"><a href="../theme-demo/index.html#demo">Demo</a></span>
       </p>
       <ul class="">
         
@@ -224,10 +224,11 @@
 <span class="sd">    &gt;&gt;&gt;  &#39;toctrees&#39;: [&lt;toctree: &gt;]</span>
 <span class="sd">    &gt;&gt;&gt; }</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="k">def</span> <span class="nf">enable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">app</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">enable</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
         <span class="c1"># env is populated from cache, if not cache create/initalize attibute</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="p">,</span> <span class="s1">&#39;toc_dict&#39;</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="p">,</span> <span class="s2">&quot;toc_dict&quot;</span><span class="p">):</span>
             <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">toc_dict</span> <span class="o">=</span> <span class="p">{}</span>
 
     <span class="k">def</span> <span class="nf">clear_doc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">app</span><span class="p">,</span> <span class="n">env</span><span class="p">,</span> <span class="n">docname</span><span class="p">):</span>
@@ -237,9 +238,8 @@
         <span class="k">for</span> <span class="n">docname</span> <span class="ow">in</span> <span class="n">docnames</span><span class="p">:</span>
             <span class="n">env</span><span class="o">.</span><span class="n">toc_dict</span><span class="p">[</span><span class="n">docname</span><span class="p">]</span> <span class="o">=</span> <span class="n">other</span><span class="o">.</span><span class="n">toc_dict</span><span class="p">[</span><span class="n">docname</span><span class="p">]</span>
 
-
     <span class="k">def</span> <span class="nf">process_doc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">app</span><span class="p">,</span> <span class="n">doctree</span><span class="p">):</span>
-        <span class="n">docname</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">docname</span> <span class="c1"># sphinx mutates this, ouch!!!</span>
+        <span class="n">docname</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">docname</span>  <span class="c1"># sphinx mutates this, ouch!!!</span>
 
         <span class="c1"># print(f&quot;================ Collector\n{docname}\n============\n&quot;)</span>
         <span class="c1"># get 1 level document toc (sections)</span>
@@ -247,21 +247,21 @@
         <span class="c1"># if first level is a single section,</span>
         <span class="c1"># ignore it and use second level of sections</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">section_nodes</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">section2_nodes</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">section_nodes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-                              <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">nodes</span><span class="o">.</span><span class="n">section</span><span class="p">)]</span>
-            <span class="k">if</span> <span class="n">section2_nodes</span><span class="p">:</span> <span class="c1"># do not replace with level-2 sections if None</span>
+            <span class="n">section2_nodes</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">section_nodes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">nodes</span><span class="o">.</span><span class="n">section</span><span class="p">)</span>
+            <span class="p">]</span>
+            <span class="k">if</span> <span class="n">section2_nodes</span><span class="p">:</span>  <span class="c1"># do not replace with level-2 sections if None</span>
                 <span class="n">section_nodes</span> <span class="o">=</span> <span class="n">section2_nodes</span>
 
         <span class="n">sections</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">section_nodes</span><span class="p">:</span>
-            <span class="n">sections</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-                <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">node</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">astext</span><span class="p">(),</span>
-                <span class="s1">&#39;href&#39;</span><span class="p">:</span> <span class="s1">&#39;#</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">node</span><span class="p">[</span><span class="s1">&#39;ids&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span>
-            <span class="p">})</span>
+            <span class="n">sections</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="n">node</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">astext</span><span class="p">(),</span> <span class="s2">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;#</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">node</span><span class="p">[</span><span class="s2">&quot;ids&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]),}</span>
+            <span class="p">)</span>
 
         <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">toc_dict</span><span class="p">[</span><span class="n">docname</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s1">&#39;sections&#39;</span><span class="p">:</span> <span class="n">sections</span><span class="p">,</span>
-            <span class="s1">&#39;toctrees&#39;</span><span class="p">:</span> <span class="n">doctree</span><span class="o">.</span><span class="n">traverse</span><span class="p">(</span><span class="n">addnodes</span><span class="o">.</span><span class="n">toctree</span><span class="p">)</span>
+            <span class="s2">&quot;sections&quot;</span><span class="p">:</span> <span class="n">sections</span><span class="p">,</span>
+            <span class="s2">&quot;toctrees&quot;</span><span class="p">:</span> <span class="n">doctree</span><span class="o">.</span><span class="n">traverse</span><span class="p">(</span><span class="n">addnodes</span><span class="o">.</span><span class="n">toctree</span><span class="p">),</span>
         <span class="p">}</span>
 
 
@@ -310,80 +310,85 @@
     <span class="n">master</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">get_doctree</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">master_doc</span><span class="p">)</span>
 
     <span class="c1"># each toctree will create navigation section</span>
-    <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># list of top level toctrees in master_doc</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># list of top level toctrees in master_doc</span>
     <span class="k">for</span> <span class="n">tree</span> <span class="ow">in</span> <span class="n">master</span><span class="o">.</span><span class="n">traverse</span><span class="p">(</span><span class="n">addnodes</span><span class="o">.</span><span class="n">toctree</span><span class="p">):</span>
 
         <span class="c1"># special case for toctree that includes a single item</span>
         <span class="c1"># that contains a nested toctree.</span>
         <span class="c1"># In this case, just use the referenced toctree directly</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tree</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">])</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">entry_docname</span> <span class="o">=</span> <span class="n">tree</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
-            <span class="n">toctrees</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">toc_dict</span><span class="p">[</span><span class="n">entry_docname</span><span class="p">][</span><span class="s1">&#39;toctrees&#39;</span><span class="p">]</span>
+        <span class="n">title</span> <span class="o">=</span> <span class="n">tree</span><span class="p">[</span><span class="s2">&quot;caption&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tree</span><span class="p">[</span><span class="s2">&quot;entries&quot;</span><span class="p">])</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">entry_docname</span> <span class="o">=</span> <span class="n">tree</span><span class="p">[</span><span class="s2">&quot;entries&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">toctrees</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">toc_dict</span><span class="p">[</span><span class="n">entry_docname</span><span class="p">][</span><span class="s2">&quot;toctrees&quot;</span><span class="p">]</span>
 
             <span class="k">if</span> <span class="n">toctrees</span><span class="p">:</span>
                 <span class="c1"># FIXME</span>
-                <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">toctrees</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Press: Not supported more then one toctree on nested toctree&quot;</span>
+                <span class="k">assert</span> <span class="p">(</span>
+                    <span class="nb">len</span><span class="p">(</span><span class="n">toctrees</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+                <span class="p">),</span> <span class="s2">&quot;Press: Not supported more then one toctree on nested toctree&quot;</span>
                 <span class="n">tree</span> <span class="o">=</span> <span class="n">toctrees</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
-        <span class="n">current0</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># same page might have multiple tocs</span>
+        <span class="n">current0</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># same page might have multiple tocs</span>
 
         <span class="c1"># add toc tree items, expand one more level if toctree is current page</span>
         <span class="n">entries</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="k">for</span> <span class="n">title</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">tree</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">]:</span>
-            <span class="k">if</span> <span class="ow">not</span> <span class="n">title</span><span class="p">:</span>
-                <span class="n">title</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">titles</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">astext</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">_title</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">tree</span><span class="p">[</span><span class="s2">&quot;entries&quot;</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">_title</span><span class="p">:</span>
+                <span class="n">_title</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">titles</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">astext</span><span class="p">()</span>
 
-            <span class="n">current1</span> <span class="o">=</span> <span class="p">(</span><span class="n">pagename</span> <span class="o">==</span> <span class="n">name</span><span class="p">)</span>
+            <span class="n">current1</span> <span class="o">=</span> <span class="n">pagename</span> <span class="o">==</span> <span class="n">name</span>
             <span class="n">children</span> <span class="o">=</span> <span class="p">[]</span>
             <span class="k">if</span> <span class="n">current1</span><span class="p">:</span>
                 <span class="n">current0</span> <span class="o">=</span> <span class="kc">True</span>
                 <span class="c1"># if current, add another level</span>
-                <span class="n">children</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">toc_dict</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;sections&#39;</span><span class="p">]</span>
+                <span class="n">children</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">toc_dict</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s2">&quot;sections&quot;</span><span class="p">]</span>
             <span class="c1"># add page_toc for current page</span>
-            <span class="n">entries</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-                <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
-                <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">title</span><span class="p">,</span>
-                <span class="s1">&#39;current&#39;</span><span class="p">:</span> <span class="n">current1</span><span class="p">,</span>
-                <span class="s1">&#39;children&#39;</span><span class="p">:</span> <span class="n">children</span><span class="p">,</span>
-            <span class="p">})</span>
+            <span class="n">entries</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                <span class="p">{</span>
+                    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+                    <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="n">_title</span><span class="p">,</span>
+                    <span class="s2">&quot;current&quot;</span><span class="p">:</span> <span class="n">current1</span><span class="p">,</span>
+                    <span class="s2">&quot;children&quot;</span><span class="p">:</span> <span class="n">children</span><span class="p">,</span>
+                <span class="p">}</span>
+            <span class="p">)</span>
 
-        <span class="n">toc_docname</span> <span class="o">=</span> <span class="n">tree</span><span class="p">[</span><span class="s1">&#39;parent&#39;</span><span class="p">]</span> <span class="c1"># docname where this toc appears</span>
-        <span class="n">title</span> <span class="o">=</span> <span class="n">tree</span><span class="p">[</span><span class="s1">&#39;caption&#39;</span><span class="p">]</span>
+        <span class="n">toc_docname</span> <span class="o">=</span> <span class="n">tree</span><span class="p">[</span><span class="s2">&quot;parent&quot;</span><span class="p">]</span>  <span class="c1"># docname where this toc appears</span>
 
         <span class="c1"># Anchor element is the section containing the toc,</span>
         <span class="c1"># as the toc itself does not contain ID.</span>
-        <span class="n">anchor_id</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="n">anchor_id</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
 
         <span class="c1"># tree.parent is the parent docutils node.</span>
         <span class="c1"># First parent is &quot;compound&quot; node toctree-wrapper,</span>
         <span class="c1"># second parent is the section containing the toctree</span>
         <span class="n">toc_section</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span>
-        <span class="k">if</span> <span class="n">toc_section</span><span class="p">[</span><span class="s1">&#39;ids&#39;</span><span class="p">]:</span> <span class="c1"># no id means toc actually not in a section</span>
+        <span class="k">if</span> <span class="n">toc_section</span><span class="p">[</span><span class="s2">&quot;ids&quot;</span><span class="p">]:</span>  <span class="c1"># no id means toc actually not in a section</span>
             <span class="c1"># TODO: should we be strict about toc being inside a section</span>
-            <span class="n">anchor_id</span> <span class="o">=</span> <span class="n">toc_section</span><span class="p">[</span><span class="s1">&#39;ids&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">anchor_id</span> <span class="o">=</span> <span class="n">toc_section</span><span class="p">[</span><span class="s2">&quot;ids&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
             <span class="k">if</span> <span class="ow">not</span> <span class="n">title</span><span class="p">:</span>
-                <span class="n">title</span> <span class="o">=</span> <span class="n">toc_section</span><span class="p">[</span><span class="s1">&#39;names&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+                <span class="n">title</span> <span class="o">=</span> <span class="n">toc_section</span><span class="p">[</span><span class="s2">&quot;names&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 
         <span class="c1"># sphinx `pathto` does not play nice with anchors when</span>
         <span class="c1"># `allow_sharp_as_current_path` is True</span>
-        <span class="n">baseuri</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_target_uri</span><span class="p">(</span><span class="n">pagename</span><span class="p">)</span><span class="o">.</span><span class="n">rsplit</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">toc_uri</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_target_uri</span><span class="p">(</span><span class="n">toc_docname</span><span class="p">)</span><span class="o">.</span><span class="n">rsplit</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">toc_href</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">#</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">relative_uri</span><span class="p">(</span><span class="n">baseuri</span><span class="p">,</span> <span class="n">toc_uri</span><span class="p">),</span> <span class="n">anchor_id</span><span class="p">)</span>
-        <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-            <span class="s1">&#39;docname&#39;</span><span class="p">:</span> <span class="n">toc_docname</span><span class="p">,</span>
-            <span class="s1">&#39;href&#39;</span><span class="p">:</span> <span class="n">toc_href</span><span class="p">,</span>
-            <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">title</span><span class="p">,</span>
-            <span class="s1">&#39;current&#39;</span><span class="p">:</span> <span class="n">current0</span><span class="p">,</span>
-            <span class="s1">&#39;entries&#39;</span><span class="p">:</span> <span class="n">entries</span><span class="p">,</span>
-        <span class="p">})</span>
-    <span class="n">context</span><span class="p">[</span><span class="s1">&#39;toctree_data&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">res</span></div>
-
+        <span class="n">baseuri</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_target_uri</span><span class="p">(</span><span class="n">pagename</span><span class="p">)</span><span class="o">.</span><span class="n">rsplit</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">toc_uri</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_target_uri</span><span class="p">(</span><span class="n">toc_docname</span><span class="p">)</span><span class="o">.</span><span class="n">rsplit</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">toc_href</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">#</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">relative_uri</span><span class="p">(</span><span class="n">baseuri</span><span class="p">,</span> <span class="n">toc_uri</span><span class="p">),</span> <span class="n">anchor_id</span><span class="p">)</span>
+        <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;docname&quot;</span><span class="p">:</span> <span class="n">toc_docname</span><span class="p">,</span>
+                <span class="s2">&quot;href&quot;</span><span class="p">:</span> <span class="n">toc_href</span><span class="p">,</span>
+                <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="n">title</span><span class="p">,</span>
+                <span class="s2">&quot;current&quot;</span><span class="p">:</span> <span class="n">current0</span><span class="p">,</span>
+                <span class="s2">&quot;entries&quot;</span><span class="p">:</span> <span class="n">entries</span><span class="p">,</span>
+            <span class="p">}</span>
+        <span class="p">)</span>
+    <span class="n">context</span><span class="p">[</span><span class="s2">&quot;toctree_data&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">res</span></div>
 
 
 <span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="n">app</span><span class="p">):</span>
     <span class="n">app</span><span class="o">.</span><span class="n">add_env_collector</span><span class="p">(</span><span class="n">SimpleTocTreeCollector</span><span class="p">)</span>
-    <span class="n">app</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;html-page-context&#39;</span><span class="p">,</span> <span class="n">add_toctree_data</span><span class="p">)</span>
-    <span class="n">app</span><span class="o">.</span><span class="n">add_html_theme</span><span class="p">(</span><span class="s1">&#39;press&#39;</span><span class="p">,</span> <span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)))</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;html-page-context&quot;</span><span class="p">,</span> <span class="n">add_toctree_data</span><span class="p">)</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">add_html_theme</span><span class="p">(</span><span class="s2">&quot;press&quot;</span><span class="p">,</span> <span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)))</span>
 </pre></div>
 
           </div>
