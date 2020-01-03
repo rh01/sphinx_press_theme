@@ -14,11 +14,14 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import datetime
+year = datetime.date.today().year
+
 
 # -- Project information -----------------------------------------------------
 
-project = 'demo'
-copyright = '2019, Eduardo'
+project = 'Sphinx Theme Demo'
+copyright = '%d, Eduardo' % year
 author = 'Eduardo'
 
 # The full version, including alpha/beta/rc tags

@@ -16,11 +16,13 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import datetime
+year = datetime.date.today().year
 
 # -- Project information -----------------------------------------------------
 
 project = 'Sphinx Press Theme'
-copyright = '2019, romnnn'
+copyright = '%d, romnnn' % year
 author = 'romnnn'
 
 # The short X.Y version
