@@ -1,4 +1,4 @@
-# romnn_sphinx_press_theme
+# romnn's sphinx press theme
 
 [![Build Status](https://github.com/romnn/sphinx_press_theme/workflows/test/badge.svg)](https://github.com/romnn/sphinx_press_theme/actions)
 [![PyPI License](https://img.shields.io/pypi/l/romnn_sphinx_press_theme)](https://pypi.org/project/romnn_sphinx_press_theme/)
