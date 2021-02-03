@@ -19,7 +19,7 @@ The theme is based on [VuePress](https://vuepress.vuejs.org/) and uses
 
 First install the theme:
 ```bash
-pip install romnn_sphinx_press_theme
+pip install romnnn_sphinx_press_theme
 ```
 
 To use the theme, set the theme name to ``press`` in your sphinx project's ``conf.py``:

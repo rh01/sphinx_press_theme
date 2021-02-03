@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="romnn_sphinx_press_theme",
+    name="romnnn_sphinx_press_theme",
     version="0.5.6",
     url="https://github.com/romnn/sphinx_press_theme",
     license="MIT",
