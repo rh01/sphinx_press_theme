@@ -1,6 +1,6 @@
 # romnn_sphinx_press_theme
 
-[![Build Status](https://travis-ci.com/romnn/sphinx_press_theme.svg?branch=master)](https://travis-ci.com/romnn/sphinx_press_theme)
+[![Build Status](https://github.com/romnn/sphinx_press_theme/workflows/test/badge.svg)](https://github.com/romnn/sphinx_press_theme/actions)
 [![PyPI License](https://img.shields.io/pypi/l/romnn_sphinx_press_theme)](https://pypi.org/project/romnn_sphinx_press_theme/)
 [![PyPI Version](https://img.shields.io/pypi/v/romnn_sphinx_press_theme)](https://pypi.org/project/romnn_sphinx_press_theme/)
 [![PyPI Python versions](https://img.shields.io/pypi/pyversions/romnn_sphinx_press_theme)](https://pypi.org/project/romnn_sphinx_press_theme/)
