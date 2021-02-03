@@ -15,9 +15,9 @@ Python
 autofunction
 ------------
 
-.. autofunction:: romnnn_sphinx_press_theme.google_docstring_example
+.. autofunction:: romnn_sphinx_press_theme.google_docstring_example
 
-.. autofunction:: romnnn_sphinx_press_theme.add_toctree_data
+.. autofunction:: romnn_sphinx_press_theme.add_toctree_data
 
 autoclass
 ---------

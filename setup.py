@@ -4,17 +4,17 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="romnnn_sphinx_press_theme",
+    name="romnn_sphinx_press_theme",
     version="0.5.6",
-    url="https://github.com/romnnn/sphinx_press_theme",
+    url="https://github.com/romnn/sphinx_press_theme",
     license="MIT",
     author="romnn",
     description="A Sphinx-doc theme based on Vuepress",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    packages=["romnnn_sphinx_press_theme"],
+    packages=["romnn_sphinx_press_theme"],
     package_data={
-        "romnnn_sphinx_press_theme": [
+        "romnn_sphinx_press_theme": [
             "theme.conf",
             "*.html",
             "util/*.html",
@@ -22,7 +22,7 @@ setup(
             "static/*.js",
         ]
     },
-    entry_points={"sphinx.html_themes": ["press = romnnn_sphinx_press_theme"]},
+    entry_points={"sphinx.html_themes": ["press = romnn_sphinx_press_theme"]},
     install_requires=["sphinx>=2.0.0", "sphinxemoji"],
     classifiers=[
         "Framework :: Sphinx",

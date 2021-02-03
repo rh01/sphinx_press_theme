@@ -22,8 +22,8 @@ year = datetime.date.today().year
 # -- Project information -----------------------------------------------------
 
 project = 'Sphinx Press Theme'
-copyright = '%d, romnnn' % year
-author = 'romnnn'
+copyright = '%d, romnn' % year
+author = 'romnn'
 
 # The short X.Y version
 version = ''
@@ -95,7 +95,7 @@ html_theme = 'press'
 #
 html_theme_options = {
   "external_links": [
-      ("Github", "https://github.com/romnnn/sphinx_press_theme")
+      ("Github", "https://github.com/romnn/sphinx_press_theme")
   ]
 }
 
@@ -146,7 +146,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'romnnn_sphinx_press_theme.tex', 'romnnn\\_sphinx\\_press\\_theme Documentation',
+    (master_doc, 'romnn_sphinx_press_theme.tex', 'romnn\\_sphinx\\_press\\_theme Documentation',
      'Eduardo Naufel Schettino', 'manual'),
 ]
 
@@ -156,7 +156,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'romnnn_sphinx_press_theme', 'romnnn_sphinx_press_theme Documentation',
+    (master_doc, 'romnn_sphinx_press_theme', 'romnn_sphinx_press_theme Documentation',
      [author], 1)
 ]
 
@@ -167,8 +167,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'romnnn_sphinx_press_theme', 'romnnn_sphinx_press_theme Documentation',
-     author, 'romnnn_sphinx_press_theme', 'One line description of project.',
+    (master_doc, 'romnn_sphinx_press_theme', 'romnn_sphinx_press_theme Documentation',
+     author, 'romnn_sphinx_press_theme', 'One line description of project.',
      'Miscellaneous'),
 ]
 
