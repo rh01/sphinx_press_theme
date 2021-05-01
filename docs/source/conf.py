@@ -22,8 +22,8 @@ year = datetime.date.today().year
 # -- Project information -----------------------------------------------------
 
 project = 'Sphinx Press Theme'
-copyright = '%d, romnn' % year
-author = 'romnn'
+copyright = '%d, Eduardo Naufel Schettino and romnn' % year
+author = 'Eduardo Naufel Schettino and romnn'
 
 # The short X.Y version
 version = ''

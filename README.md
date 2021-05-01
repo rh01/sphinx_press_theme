@@ -7,7 +7,7 @@
 
 See a [live demo](https://romnn.github.io/sphinx_press_theme).
 
-This is a fork of the original [sphinx_press_theme](https://schettino72.github.io/sphinx_press_site/) by [schettino72](),
+This is a fork of the original [sphinx_press_theme](https://schettino72.github.io/sphinx_press_site/),
 which is a modern and responsive theme for python's [Sphinx](http://www.sphinx-doc.org) documentation generator.
 
 The theme is based on [VuePress](https://vuepress.vuejs.org/) and uses 
